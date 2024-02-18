@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="masar.png" alt="Logo">
+        <a href="https://linktr.ee/masar_2030">تواصل معنا</a>
+        
+    </div>
+    <div class="container">
+        <h1>!حياك، <span id="player-name"></span>  في تحدي مسار  X/O</h1>
+        <div class="scoreboard">
+            <div>
+                <div id="player-score" class="score">0</div>
+                <span>:أنت</span>
+            </div>
+            <div>
+                <div id="ai-score" class="score">0</div>
+                <span>:الذكاء الاصطناعي</span>
+            </div>
+            <div>
+                <div id="draw-score" class="score">0</div>
+                <span>:تعادل</span>
+            </div>
+        </div>
+        <div id="board"></div>
+        <button onclick="resetBoard()">إعادة تعيين</button>
+        <button onclick="endGame()">إنهاء اللعبة</button>
+    </div>
+    <script src="script.js"></script>
+
+    <footer style="text-align: center; padding: 7px; color: white; font-size: 8%;">
+        جميع الحقوق محفوظة لمسار © 2024 - برمج من قبل بسام
+    </footer>
+</body>
+
+</html>
